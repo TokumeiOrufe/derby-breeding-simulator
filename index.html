@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ダービーリーグ 配合シミュレーター</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <h1>ダービーリーグ 配合シミュレーター</h1>
 
-    <p>配合する2頭を選択してください。</p>
+    <p class="notice">
+        注意：同じ名前の馬を複数登録する場合は、
+        名前の後ろに「A」「B」など、ご自身で区別できる文字を付けてください。
+    </p>
+
+    <main>
+
+        <section>
+            <h2>馬を追加</h2>
+
+            <label for="horseName">馬名</label>
+            <input type="text" id="horseName" placeholder="馬名を入力">
+
+            <button id="addHorseButton">馬を追加</button>
+        </section>
+
+        <section>
+            <h2>登録馬</h2>
+
+            <ul id="horseList"></ul>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
